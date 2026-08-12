@@ -1,9 +1,8 @@
 <!-- 
--Script Bash para analizar /var/log/auth.log y detectar intentos fallidos de autenticación.
--Extracción de IP y usuario mediante grep, awk y tail.
--Notificaciones push mediante ntfy.sh.
--Automatización de ejecución cada 5 minutos mediante cron.
--Tecnologías: Linux, Bash, Cron, SSH, curl, grep, awk.kc
+-Analizar, filtrar e identificar archivo auth.log los mensajes con el siguiente formato:
+-"Invalid user tong from 202.152.201.166 port 50052"
+-No repetir mensajes
+-Tecnologías: Linux, grep, awk
  -->
 
 <!-- 
